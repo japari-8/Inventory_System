@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"aparicio.firstscreen","l":"aparicio.controller"},{"m":"aparicio.firstscreen","l":"model"}];updateSearchResults();

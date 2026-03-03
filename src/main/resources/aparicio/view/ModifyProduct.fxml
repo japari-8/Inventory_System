@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aparicio.controller.ModifyProduct">
+   <children>
+      <Label layoutX="55.0" layoutY="68.0" text="ModifyProduct">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="modPdId" editable="false" layoutX="135.0" layoutY="170.0" opacity="0.51" />
+      <TextField fx:id="modPdName" layoutX="135.0" layoutY="222.0" />
+      <TextField fx:id="modPdInv" layoutX="135.0" layoutY="274.0" prefHeight="25.0" prefWidth="80.0" />
+      <TextField fx:id="modPdPrice" layoutX="135.0" layoutY="326.0" prefHeight="25.0" prefWidth="80.0" />
+      <TextField fx:id="modPdMax" layoutX="135.0" layoutY="378.0" prefHeight="25.0" prefWidth="80.0" />
+      <TextField fx:id="modPdMin" layoutX="278.0" layoutY="378.0" prefHeight="25.0" prefWidth="80.0" />
+      <Button layoutX="703.0" layoutY="506.0" mnemonicParsing="false" onAction="#onRemoveAssocPrt2" prefHeight="25.0" prefWidth="149.0" text="Remove Associated Part" />
+      <Button layoutX="702.0" layoutY="550.0" mnemonicParsing="false" onAction="#onSaveMod2" text="Save" />
+      <Button layoutX="777.0" layoutY="550.0" mnemonicParsing="false" onAction="#backToMainAgain" text="Cancel" />
+      <Label layoutX="73.0" layoutY="174.0" text="ID" />
+      <Label layoutX="73.0" layoutY="226.0" text="Name" />
+      <Label layoutX="73.0" layoutY="278.0" text="Inv" />
+      <Label layoutX="73.0" layoutY="330.0" text="Price" />
+      <Label layoutX="73.0" layoutY="382.0" text="Max" />
+      <Label layoutX="240.0" layoutY="382.0" text="Min" />
+      <Button layoutX="759.0" layoutY="263.0" mnemonicParsing="false" onAction="#onAddAssocPt2" text="Add" />
+      <TableView fx:id="partsTable3" layoutX="457.0" layoutY="68.0" prefHeight="185.0" prefWidth="420.0">
+        <columns>
+          <TableColumn fx:id="partIDCol3" prefWidth="105.0" text="Part ID" />
+          <TableColumn fx:id="partNameCol3" prefWidth="105.0" text="Part Name" />
+            <TableColumn fx:id="partInvLevelCol3" prefWidth="105.0" text="Inventory Level" />
+            <TableColumn fx:id="partPriceCostCol3" prefWidth="105.0" text="Price/Cost per Unit" />
+        </columns>
+      </TableView>
+      <TableView fx:id="assocPrtTable2" layoutX="457.0" layoutY="309.0" prefHeight="185.0" prefWidth="420.0">
+        <columns>
+          <TableColumn fx:id="assocPrtIdCol2" prefWidth="105.0" text="Part ID" />
+          <TableColumn fx:id="assocPrtNameCol2" prefWidth="105.0" text="Part Name" />
+            <TableColumn fx:id="assocPrtInvCol2" prefWidth="105.0" text="Inventory Level" />
+            <TableColumn fx:id="assocPrtPriceCol2" prefWidth="105.0" text="Price/Cost per Unit" />
+        </columns>
+      </TableView>
+      <TextField fx:id="invPartsSearch3" layoutX="729.0" layoutY="35.0" onAction="#onInvPartsSearch3" promptText="Search by Part ID or Name" />
+   </children>
+</AnchorPane>

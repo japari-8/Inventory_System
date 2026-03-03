@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aparicio.controller.ModifyPartOutsourced">
+   <children>
+      <Label layoutX="122.0" layoutY="100.0" text="Modify Part">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <RadioButton layoutX="276.0" layoutY="116.0" mnemonicParsing="false" onAction="#backToModifyPartInHouse" text="In-House" />
+      <RadioButton layoutX="563.0" layoutY="116.0" mnemonicParsing="false" selected="true" text="Outsourced" />
+      <Button layoutX="728.0" layoutY="527.0" mnemonicParsing="false" onAction="#backToMain" text="Cancel" />
+      <Button layoutX="650.0" layoutY="527.0" mnemonicParsing="false" onAction="#onSaveModPtOutS" text="Save" />
+      <TextField fx:id="modIdOutS" editable="false" layoutX="276.0" layoutY="168.0" opacity="0.5" AnchorPane.topAnchor="192.0" />
+      <TextField fx:id="modNameOutS" layoutX="276.0" layoutY="223.0" AnchorPane.topAnchor="244.0" />
+      <TextField fx:id="modInvOutS" layoutX="276.0" layoutY="267.0" AnchorPane.topAnchor="296.0" />
+      <TextField fx:id="modPriceCostOutS" layoutX="276.0" layoutY="312.0" AnchorPane.topAnchor="348.0" />
+      <TextField fx:id="modMaxOutS" layoutX="276.0" layoutY="361.0" AnchorPane.topAnchor="400.0" />
+      <TextField fx:id="modMinOutS" layoutX="512.0" layoutY="400.0" />
+      <TextField fx:id="modCoNameOutS" layoutX="276.0" layoutY="411.0" AnchorPane.topAnchor="452.0" />
+      <Label layoutX="179.0" layoutY="456.0" text="Company Name" />
+      <Label layoutX="180.0" layoutY="196.0" text="ID" />
+      <Label layoutX="180.0" layoutY="248.0" text="Name" />
+      <Label layoutX="180.0" layoutY="300.0" text="Inv" />
+      <Label layoutX="180.0" layoutY="352.0" text="Price/Cost" />
+      <Label layoutX="180.0" layoutY="404.0" text="Max" />
+      <Label layoutX="458.0" layoutY="404.0" text="Min" />
+   </children>
+</AnchorPane>
