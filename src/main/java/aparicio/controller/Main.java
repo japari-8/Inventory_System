@@ -5,13 +5,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import model.InHousePart;
-import model.Inventory;
-import model.Part;
 
 import java.io.IOException;
-
-import static javafx.fxml.FXMLLoader.load;
 
 /** This class creates an app for an Inventory Management System.
  * FUTURE ENHANCEMENTS: Add columns in the TableViews so all data
@@ -28,7 +23,7 @@ public class Main extends Application {
     }
 
     /** This is the main method. This method launches the main screen.
-     * JavaDoc folder included in FirstScreen folder.*/
+     * Javadoc folder included in FirstScreen folder.*/
     public static void main(String[] args) {
 
         launch();

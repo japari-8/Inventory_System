@@ -58,6 +58,7 @@ public class Inventory {
      * @param selectedPart the part to delete
      * @return the list with the part deleted*/
     public static boolean deletePart(Part selectedPart) {
+
         return allParts.remove(selectedPart);
     }
 

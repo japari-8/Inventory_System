@@ -21,6 +21,7 @@ public class InHousePart extends Part {
      * @return the machineId
      */
     public int getMachineId() {
+
         return machineId;
     }
 
